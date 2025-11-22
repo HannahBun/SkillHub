@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="#F2F4F8">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
+
+        
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/logo_2"
+            android:src="@drawable/Logo"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="10dp" />
+
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wlm"
+            android:textColor="#111827"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp">
+
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_an_account"
+                    android:textColor="#111827"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/enter_your_details_to_signup"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:autofillHints="name"
+                    android:background="@drawable/input_bg"
+                    android:hint="@string/fname"
+                    android:inputType="textPersonName"
+                    android:paddingStart="14dp"
+                    android:textColorHint="#78909C"
+                    tools:ignore="RtlSymmetry" />
+
+               
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_name"
+                    android:layout_marginTop="14dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:autofillHints="name"
+                    android:background="@drawable/input_bg"
+                    android:hint="@string/lastname"
+                    android:inputType="textPersonName"
+                    android:paddingStart="14dp"
+                    android:textColorHint="#78909C"
+                    tools:ignore="RtlSymmetry" />
+
+               
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emaill"
+                    android:layout_marginTop="14dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/input_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/email"
+                        android:src="@drawable/ic_email"
+                        android:tint="#9CA3AF"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="emailAddress"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/your_email"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="10dp"
+                        android:textColorHint="#78909C"
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
+                </LinearLayout>
+
+               
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pssd"
+                    android:layout_marginTop="14dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/input_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/lock"
+                        android:src="@drawable/ic_lock"
+                        android:tint="#9CA3AF"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:autofillHints="password"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/pd"
+                        android:inputType="textPassword"
+                        android:paddingStart="10dp"
+                        android:textColorHint="#78909C"
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                    <ImageView
+                        android:id="@+id/ivTogglePass"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/eye"
+                        android:src="@drawable/ic_eye"
+                        android:tint="#9CA3AF"
+                        tools:ignore="ImageContrastCheck" />
+                </LinearLayout>
+
+              
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm_password"
+                    android:layout_marginTop="14dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/input_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/lock"
+                        android:src="@drawable/ic_lock"
+                        android:tint="#9CA3AF"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/etConfirmPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:autofillHints="password"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/pwd"
+                        android:inputType="textPassword"
+                        android:paddingStart="10dp"
+                        android:textColorHint="#78909C"
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
+
+                    <ImageView
+                        android:id="@+id/ivToggleConfirm"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/confirm"
+                        android:src="@drawable/ic_eye"
+                        android:tint="#9CA3AF"
+                        tools:ignore="ImageContrastCheck" />
+                </LinearLayout>
+
+                
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/sign_up"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="26dp"
+                    android:backgroundTint="#0C1325"/>
+
+               
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/already_have_an_account_log_in"
+                    android:textColor="#2563EB"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
