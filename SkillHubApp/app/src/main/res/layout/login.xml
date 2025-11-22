@@ -15,16 +15,14 @@
         android:paddingTop="40dp"
         android:paddingBottom="40dp">
 
-        <!-- Main Title -->
-        <TextView
-            android:id="@+id/titleSkillHub"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/log_in"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#111827"
-            android:layout_marginBottom="30dp" />
+       <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/Logo" />
 
         <!-- LOGIN CARD -->
         <androidx.cardview.widget.CardView
@@ -43,7 +41,7 @@
                 android:orientation="vertical"
                 android:padding="24dp">
 
-                <!-- Welcome Text -->
+                
                 <TextView
                     android:id="@+id/tvWelcome"
                     android:layout_width="wrap_content"
@@ -64,7 +62,7 @@
                     android:textColor="#757575"
                     android:textSize="14sp" />
 
-                <!-- Email Label -->
+                
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -73,7 +71,7 @@
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
-                <!-- Email Input Container -->
+                
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -107,7 +105,7 @@
 
                 </LinearLayout>
 
-                <!-- Password Label -->
+                
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -116,7 +114,7 @@
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
-                <!-- Password Input Container -->
+                
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -159,7 +157,7 @@
 
                 </LinearLayout>
 
-                <!-- Forgot Password -->
+                
                 <TextView
                     android:id="@+id/tvForgotPassword"
                     android:layout_width="wrap_content"
