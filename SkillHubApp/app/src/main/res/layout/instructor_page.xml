@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/Logo"
+                android:adjustViewBounds="true" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="@string/notify"
+                android:src="@drawable/ic_notification"
+                android:tint="#000"
+                android:layout_marginEnd="12dp" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/profile"
+                android:src="@drawable/ic_profile"
+                android:tint="#000" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:text="@string/dashboard"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="28dp"
+                android:layout_height="30dp"
+                android:layout_width="100dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="@string/my_course"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/welcome_back_angela"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCreateCourse"
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#2563EB"
+                android:text="@string/create_new_course"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <!-- YOUR COURSES TITLE -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:text="@string/your_courses"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="@string/viewall"
+                android:textColor="#2563EB"
+                android:textSize="16sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/courseList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <!-- REUSE SAME COURSE ITEM -->
+            <include layout="@layout/instructor_course" />
+            <include layout="@layout/instructor_course2" />
+            <include layout="@layout/instructor_course3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/here_s_what_s_happening_with_your_courses"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>
