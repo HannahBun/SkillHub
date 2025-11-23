@@ -15,7 +15,7 @@
         android:layout_marginBottom="16dp"
         android:adjustViewBounds="true"
         android:contentDescription="App Logo"
-        android:src="@drawable/Logo" />
+        android:src="@drawable/logo" />
 
     <!-- Search bar -->
     <EditText
