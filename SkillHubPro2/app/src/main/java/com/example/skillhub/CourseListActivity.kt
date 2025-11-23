@@ -19,6 +19,7 @@ class CourseListActivity : AppCompatActivity() {
     private lateinit var courses: List<Course>
     private lateinit var adapter: CourseAdapter
     private var currentUserId: Int = -1
+    private lateinit var btnFilter: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
