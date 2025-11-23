@@ -15,7 +15,7 @@
         android:layout_marginBottom="24dp"
         android:adjustViewBounds="true"
         android:contentDescription="App Logo"
-        android:src="@drawable/Logo" />
+        android:src="@drawable/logo" />
 
     <!-- Instructor Dashboard Title -->
     <TextView
