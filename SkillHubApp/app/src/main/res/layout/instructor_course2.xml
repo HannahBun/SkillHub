@@ -65,22 +65,6 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="18dp"
-                android:contentDescription="@string/star"
-                android:src="@drawable/ic_star"
-                android:tint="#FFA500" />
-
-            <TextView
-                android:id="@+id/courseRating"
-                android:layout_width="32dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="6dp"
-                android:text="@string/_4_0"
-                android:textColor="#757575" />
-
         </LinearLayout>
 
         <Button
@@ -118,5 +102,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 </androidx.cardview.widget.CardView>
