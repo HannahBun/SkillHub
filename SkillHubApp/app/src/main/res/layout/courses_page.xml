@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F8F8FF">
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/tvCoursesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Courses"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingBottom="12dp" />
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#E5D5FF"
+        android:orientation="horizontal"
+        android:paddingHorizontal="14dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="2dp"
+        android:clipToOutline="true"
+        android:backgroundTint="#E5D5FF"
+        android:shape="rectangle">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:tint="#7F56D9" />
+
+        <EditText
+            android:id="@+id/etSearchCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search your courses"
+            android:textColor="#000"
+            android:textColorHint="#757575"
+            android:background="@android:color/transparent"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <!-- RecyclerView for Course Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCourses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp" />
+
+</LinearLayout>
