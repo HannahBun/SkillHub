@@ -16,7 +16,7 @@
         android:layout_marginBottom="12dp"
         android:adjustViewBounds="true"
         android:contentDescription="App Logo"
-        android:src="@drawable/Logo" />
+        android:src="@drawable/logo" />
 
     <!-- Learner Enrolled Title -->
     <TextView
