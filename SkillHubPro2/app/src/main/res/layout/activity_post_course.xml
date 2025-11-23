@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvPostCourseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post a New Course"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="32dp" />
+
+        <EditText
+            android:id="@+id/etCourseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Title"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etCourseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Description"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etCoursePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnPostCourseSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Course"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnBackToDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Dashboard"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="start"/>
+
+    </LinearLayout>
+</ScrollView>

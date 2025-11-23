@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvLearnerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learner Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnBrowseCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Courses"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnMyCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Enrolled Courses"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnLogoutLearner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Logout" />
+
+</LinearLayout>
