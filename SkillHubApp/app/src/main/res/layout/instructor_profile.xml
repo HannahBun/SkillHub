@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/Logo"
+                android:adjustViewBounds="true" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="@string/notify"
+                android:src="@drawable/ic_notification"
+                android:tint="#000"
+                android:layout_marginEnd="16dp" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:contentDescription="@string/profile"
+                android:src="@drawable/ic_profile"
+                android:tint="#6C4DFE" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="256dp"
+            android:layout_marginTop="16dp"
+            android:background="#F5F5F5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/profile"
+                android:src="@drawable/ic_profile2"
+                android:tint="#6C4DFE" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/angela"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="20dp"
+                android:text="@string/angela_gmail_com"
+                android:textColor="#616161"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#6C4DFE"
+                android:text="@string/editprofile"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- Sidebar Settings -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Change Password -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="#F8F8F8"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:contentDescription="@string/lock"
+                        android:src="@drawable/ic_lock"
+                        android:tint="#333" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="12dp"
+                        android:text="@string/changepassword"
+                        android:textSize="16sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/right"
+                        android:src="@drawable/ic_arrow_right" />
+                </LinearLayout>
+
+                <!-- Payments -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="#F8F8F8"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:contentDescription="@string/payment"
+                        android:src="@drawable/ic_payment"
+                        android:tint="#333" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="12dp"
+                        android:text="@string/payments2"
+                        android:textSize="16sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/right"
+                        android:src="@drawable/ic_arrow_right" />
+
+                </LinearLayout>
+
+                <!-- Logout -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:strokeColor="#C62828"
+                    android:text="@string/log_out2"
+                    android:textColor="#C62828" />
+
+                <!-- Delete Account -->
+                <Button
+                    android:id="@+id/btnDeleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:backgroundTint="#C62828"
+                    android:text="@string/delete_account2"
+                    android:textColor="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="277dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+
+                    <include layout="@layout/instructor_stat" />
+
+                    <include layout="@layout/instructor_stat2" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Stats Cards -->
+
+    </LinearLayout>
+
+</ScrollView>
