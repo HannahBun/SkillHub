@@ -7,13 +7,13 @@
 
     <!-- Logo ImageView -->
     <ImageView
-        android:id="@+id/Logo"
+        android:id="@+id/logo"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginBottom="24dp"
         android:adjustViewBounds="true"
         android:contentDescription="App Logo"
-        android:src="@drawable/Logo" />
+        android:src="@drawable/logo" />
 
     <!-- Login Title -->
     <TextView
