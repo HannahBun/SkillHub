@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp">
@@ -10,6 +11,17 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
+        <!-- Logo ImageView -->
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="24dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="App Logo"
+            android:src="@drawable/Logo" />
+
+        <!-- Register Title -->
         <TextView
             android:id="@+id/tvRegisterTitle"
             android:layout_width="wrap_content"
@@ -19,6 +31,7 @@
             android:textStyle="bold"
             android:paddingBottom="32dp" />
 
+        <!-- Username -->
         <EditText
             android:id="@+id/etRegUsername"
             android:layout_width="match_parent"
@@ -26,6 +39,7 @@
             android:hint="Username"
             android:layout_marginBottom="16dp" />
 
+        <!-- Password -->
         <EditText
             android:id="@+id/etRegPassword"
             android:layout_width="match_parent"
@@ -34,6 +48,7 @@
             android:inputType="textPassword"
             android:layout_marginBottom="16dp" />
 
+        <!-- Confirm Password -->
         <EditText
             android:id="@+id/etRegConfirmPassword"
             android:layout_width="match_parent"
@@ -42,6 +57,7 @@
             android:inputType="textPassword"
             android:layout_marginBottom="24dp" />
 
+        <!-- Account Type Text -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,6 +65,7 @@
             android:textSize="16sp"
             android:paddingBottom="8dp" />
 
+        <!-- Role RadioGroup -->
         <RadioGroup
             android:id="@+id/rgRole"
             android:layout_width="match_parent"
@@ -70,6 +87,7 @@
                 android:text="Instructor" />
         </RadioGroup>
 
+        <!-- Register Button -->
         <Button
             android:id="@+id/btnRegisterSubmit"
             android:layout_width="match_parent"
@@ -77,6 +95,7 @@
             android:text="Register"
             android:padding="12dp" />
 
+        <!-- Go to Login Button -->
         <Button
             android:id="@+id/tvGoToLogin"
             android:layout_width="wrap_content"
