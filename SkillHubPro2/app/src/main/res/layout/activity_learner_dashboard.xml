@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="top|center_horizontal"
     android:padding="24dp">
 
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="24dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="App Logo"
+        android:src="@drawable/Logo" />
+
+    <!-- Learner Dashboard Title -->
     <TextView
         android:id="@+id/tvLearnerTitle"
         android:layout_width="wrap_content"
@@ -15,6 +27,7 @@
         android:textStyle="bold"
         android:paddingBottom="32dp" />
 
+    <!-- Browse Courses Button -->
     <Button
         android:id="@+id/btnBrowseCourses"
         android:layout_width="match_parent"
@@ -23,6 +36,7 @@
         android:padding="12dp"
         android:layout_marginBottom="16dp" />
 
+    <!-- My Enrolled Courses Button -->
     <Button
         android:id="@+id/btnMyCourses"
         android:layout_width="match_parent"
@@ -30,6 +44,7 @@
         android:text="My Enrolled Courses"
         android:padding="12dp" />
 
+    <!-- Logout Button -->
     <Button
         android:id="@+id/btnLogoutLearner"
         android:layout_width="match_parent"
