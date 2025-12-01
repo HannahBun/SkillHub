@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="24dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="App Logo"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvInstructorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructor Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnPostCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post New Course"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnMyCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Posted Courses"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnLogoutInstructor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

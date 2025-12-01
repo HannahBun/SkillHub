@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.skillhub"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SkillHub"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SkillHub">
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".User"
+            android:exported="false"/>
+
+        <activity android:name=".Learner"
+            android:exported="false"/>
+
+        <activity android:name=".Instructor"
+            android:exported="false"/>
+
+        <activity android:name=".Payment"
+            android:exported="false"/>
+
+        <activity android:name=".Search"
+            android:exported="false"/>
+
+        <activity android:name=".PostCourse"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
